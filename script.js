@@ -33,9 +33,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(10, 10, 10, 0.98)';
+        navbar.style.background = 'rgba(61, 90, 128, 0.98)';
     } else {
-        navbar.style.background = 'rgba(10, 10, 10, 0.95)';
+        navbar.style.background = 'rgba(61, 90, 128, 0.95)';
     }
 });
 
@@ -273,7 +273,7 @@ window.addEventListener('scroll', updateActiveNavLink);
 const style = document.createElement('style');
 style.textContent = `
     .nav-link.active {
-        color: var(--accent-mint) !important;
+        color: var(--accent-primary) !important;
     }
     
     .nav-link.active::after {
